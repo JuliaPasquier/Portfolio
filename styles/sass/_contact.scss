@@ -1,0 +1,94 @@
+.contact {
+    height: 90vh;
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: rgb(0, 0, 0);
+    align-items: center;
+    position: relative;
+    padding: 70px 10% 0;
+    border-radius: 10px;
+
+    // Add this code
+    .icons-réseaux {
+        display: flex;
+        align-items: center;
+    }
+
+    // Rest of the code...
+
+    @include Phones {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        margin: 10px;
+        padding: 0px;
+    }
+
+    .contact-form {
+        align-items: center;
+        margin-top: 50px;
+
+    }
+
+    .contact-form button,
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        color:$color_60;
+
+        @include Phones {
+            margin-bottom: 10px;
+        }
+    }
+
+    .contact-form button {
+        padding: 10px 20px;
+        background-color: $color_10;
+        color:$color_60;
+        text-transform: uppercase;
+        font-weight: bold;
+        border: none;
+        cursor: pointer;
+        &:hover {
+            box-shadow: 0 0 5px $color_10, 0 0 25px $color_10, 0 0 50px $color_10,
+            0 0 100px $color_10, 0 0 200px $color_10;
+        } }
+
+}
+
+.contact h2 {
+    font-size: 100px;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    letter-spacing: 4px;
+    font-weight: 500;
+    margin: -3px 0;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+
+    @include Phones {
+        font-size: 10vw;
+        margin-top: 5px;
+        margin-bottom: 50px;
+        margin-top: 30px;
+    }
+}
+
+input.btn {
+    border: none;
+    background-color: $color_10;
+    color: black;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.logoContact{
+vertical-align: middle;
+}

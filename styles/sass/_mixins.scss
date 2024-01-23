@@ -1,0 +1,52 @@
+// SCREENS
+$phones: 576px;
+
+$tablets_max: 769px;
+$tablets: 769px;
+
+$laptops_max: 992px;
+$laptops: 992px;
+
+$larges_max: 1200px;
+$larges: 1200px;
+
+@mixin Phones($mediaMax: $phones){
+    @media screen and (max-width: $mediaMax) {
+        @content;
+    }
+}
+@mixin Phones_max($mediaMax: $tablets){
+    @media screen and (max-width: $mediaMax) {
+        @content;
+    }
+}
+@mixin Tablets($mediaMax: $tablets){
+    @media screen and (min-width: $mediaMax) {
+        @content;
+    }
+}
+@mixin Tablets_max($media: $laptops){
+    @media screen and (max-width: $media) {
+        @content;
+    }
+}
+@mixin Laptops($mediaMax: $laptops){
+    @media screen and (min-width: $mediaMax) {
+        @content;
+    }
+}
+@mixin Laptops_max($mediaMax: $laptops){
+    @media screen and (max-width: $mediaMax) {
+        @content;
+    }
+}
+@mixin Larges_max($mediaMax: $larges_max){
+    @media screen and (max-width: $mediaMax) {
+        @content;
+    }
+}
+@mixin Larges($mediaMax: $larges){
+    @media screen and (min-width: $mediaMax) {
+        @content;
+    }
+}

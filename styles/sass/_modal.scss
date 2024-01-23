@@ -1,0 +1,42 @@
+#myModal {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    background-color: rgba(243, 240, 240, 0.4);
+    color: black;
+
+    .modal-content {
+        background-color: #000000;
+        color: white;
+        border-radius: 10px;
+        margin: 10% auto;
+        padding: 20px;
+        width: 40%;
+        font-size: 30px;
+        text-align: center;
+
+        @include Phones_max {
+            width: 90%;
+            font-size: 10px;
+        }
+
+        p {
+            padding: 0 30px;
+        }
+    }
+
+}
+
+img.profil {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+}
