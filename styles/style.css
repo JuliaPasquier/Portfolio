@@ -46,7 +46,7 @@ footer {
 
 .card-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   margin: 0 auto;
   padding-top: 60px;
 }
@@ -127,7 +127,7 @@ footer {
 }
 
 .hover h1 {
-  font-size: 30px;
+  font-size: 20px;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   letter-spacing: 4px;
   font-weight: 500;
@@ -139,11 +139,13 @@ footer {
 }
 
 .hover p {
-  font-size: 20px;
+  font-size: 15px;
+  text-align: center;
+  padding: 10px;
   color: white;
   font-family: Verdana, sans-serif;
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 .hover,
